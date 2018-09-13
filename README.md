@@ -42,7 +42,7 @@ Resource hierarchy helps resolve this deadlock by taking out the circular wait c
 
 The resources (forks) will be numbered 0 through 4 and each unit of work (philosopher) will always pick up the lower-numbered fork first, and then the higher-numbered fork, from among the two forks they plan to use. If four of the five philosophers simultaneously pick up their lower-numbered fork, only the highest-numbered fork will remain on the table, so the fifth philosopher will not be able to pick up any fork.
 
-Note about the program:
+Notes about the program:
 ---------------------------
 
 _ It is assumed that once a philosopher has requested to EAT, they cannot request to THINK and
