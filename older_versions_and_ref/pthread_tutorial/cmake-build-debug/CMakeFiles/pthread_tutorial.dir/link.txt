@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/pthread_tutorial.dir/count.c.o  -o pthread_tutorial 

@@ -1,0 +1,3 @@
+/Users/jtran/CLionProjects/pthread_tutorial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jtran/CLionProjects/pthread_tutorial/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jtran/CLionProjects/pthread_tutorial/cmake-build-debug/CMakeFiles/pthread_tutorial.dir
