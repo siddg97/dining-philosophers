@@ -1,10 +1,10 @@
 Interactive Dining Philosophers Problem
 =======================================
 
-Solved by using Resource Hierarchy Solution. Implemented with pthread library Condition variables.
+Solved by using Resource Hierarchy Solution. Implemented with C pthread library Condition variables.
 
 
-### Compile dinphil.c
+Compile dinphil.c
 ---------------------
 ```
 gcc --std=c99 -Wall -g -Werror dinphil.c -o dinphil -lpthread
@@ -15,7 +15,7 @@ gcc --std=c99 -Wall -g -Werror dinphil.c -o dinphil -lpthread
 ./dinphil
 ```
 
-### How to interact with the program
+How to interact with the program
 -------------------------------------
 The commands for user interface should be interpreted as follows:
 
@@ -30,8 +30,10 @@ For instance, entering P in the beginning of program execution would output `0 0
 
 Entering `!` should immediately terminate the program.
 
+![alt text](https://github.com/jdiggidawg/dining-philosophers/blob/master/demo.png "demo")
 
-### Abstract
+
+Abstract
 ------------
 
 In the Dining Philosophers problem, a deadlock can happen if all 5 philosophers pick up 1 fork either only their left or only on their right.
@@ -40,7 +42,7 @@ Resource hierarchy helps resolve this deadlock by taking out the circular wait c
 
 The resources (forks) will be numbered 0 through 4 and each unit of work (philosopher) will always pick up the lower-numbered fork first, and then the higher-numbered fork, from among the two forks they plan to use. If four of the five philosophers simultaneously pick up their lower-numbered fork, only the highest-numbered fork will remain on the table, so the fifth philosopher will not be able to pick up any fork.
 
-### Note about the program:
+Note about the program:
 ---------------------------
 
 _ It is assumed that once a philosopher has requested to EAT, they cannot request to THINK and
