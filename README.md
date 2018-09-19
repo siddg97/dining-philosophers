@@ -47,15 +47,18 @@ Notes about the program:
 
 _ It is assumed that once a philosopher has requested to EAT, they cannot request to THINK and
 put the acquired fork down. They can only think once their EAT request has been serviced.
+
 _ The shared resources are managed by:
 1. A global array fork_state[]
 2. A condition variable array fork_cond[]
 3. Bool Has_left_fork, has_right_fork in a philosopher_t struct
 
-Pthread_cond_wait() and and pthread_cond_signal() are used extensively to manage the
+_ Pthread_cond_wait() and and pthread_cond_signal() are used extensively to manage the
 acquirement of the forks.
+
 _ You may change NUM_OF_PHILS to see more than 5 philosophers.
+
 _ Under user input handling for input ‘P’. You can uncomment printStateVerbose() to see more
-state information. Note that number 2 indicates the philosopher is hungry.
+state information. Note that number 2 indicates the philosopher is hungry- for example:  `1 2 1 0 0\n`
 
 
